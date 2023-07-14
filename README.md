@@ -1,7 +1,4 @@
 # PicoGPT
-Accompanying blog post: [GPT in 60 Lines of Numpy](https://jaykmody.com/blog/gpt-from-scratch/)
-
----
 
 You've seen [openai/gpt-2](https://github.com/openai/gpt-2).
 
@@ -11,7 +8,7 @@ You've even seen [karpathy/nanoGPT](https://github.com/karpathy/nanogpt)!
 
 But have you seen [picoGPT](https://github.com/jaymody/picoGPT)??!?
 
-`picoGPT` is an unnecessarily tiny and minimal implementation of [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) in plain [NumPy](https://numpy.org). The entire forward pass code is [40 lines of code](https://github.com/jaymody/picoGPT/blob/main/gpt2_pico.py#L3-L41).
+`picoGPT` is an unnecessarily tiny and minimal implementation of [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) in plain [NumPy](https://numpy.org). The entire forward pass code is [40 lines of code](https://github.com/jaymody/picoGPT/blob/main/gpt2_pico.py#L3-L41). I wrote a related [blog post](https://jaykmody.com/blog/gpt-from-scratch/) for picoGPT.
 
 picoGPT features:
 * Fast? ❌ Nah, picoGPT is megaSLOW 🐌
@@ -56,3 +53,7 @@ python gpt2.py \
     --model_size "124M" \
     --models_dir "models"
 ```
+
+#### References
+- Multi-head attention mechanism: https://data-science-blog.com/blog/2021/04/07/multi-head-attention-mechanism/
+- GPT Model: https://en.wikipedia.org/wiki/GPT-2#/media/File:Full_GPT_architecture.png

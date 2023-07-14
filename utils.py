@@ -70,10 +70,10 @@ def load_encoder_hparams_and_params(model_size, models_dir):
 
     model_dir = os.path.join(models_dir, model_size)
     tf_ckpt_path = tf.train.latest_checkpoint(model_dir)
-    if not tf_ckpt_path:  # download files if necessary
-        os.makedirs(model_dir, exist_ok=True)
-        download_gpt2_files(model_size, model_dir)
-        tf_ckpt_path = tf.train.latest_checkpoint(model_dir)
+#    if not tf_ckpt_path:  # download files if necessary
+#        os.makedirs(model_dir, exist_ok=True)
+#        download_gpt2_files(model_size, model_dir)
+#        tf_ckpt_path = tf.train.latest_checkpoint(model_dir)
 
     encoder = get_encoder(model_size, models_dir)
     hparams = json.load(open(os.path.join(model_dir, "hparams.json")))
